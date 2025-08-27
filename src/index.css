@@ -301,6 +301,15 @@ All colors MUST be HSL. 60/30/10 color usage with WCAG AA accessibility.
   .transition-elegant {
     transition: var(--transition-elegant);
   }
+  
+  /* Safe area utilities for mobile devices */
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
 }
 
 @layer components {
